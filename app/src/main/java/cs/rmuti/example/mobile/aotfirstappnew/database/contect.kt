@@ -1,4 +1,4 @@
-package chimjan.xkalux.mobilehomework_firstapp.database
+package cs.rmuti.example.mobile.aotfirstappnew.database
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
