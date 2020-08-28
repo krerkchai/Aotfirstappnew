@@ -47,10 +47,9 @@
                 android:inputType="text" />
 
 
-
             <Button
                 android:id="@+id/buttonInsert"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#FF9800"
                 android:onClick="@{()->contactViewModel.onContactAdd()}"
@@ -62,9 +61,20 @@
             <TextView
                 android:id="@+id/textview"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="454dp"
                 android:background="@drawable/as"
                 android:text="@{contactViewModel.contactString}" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFC107"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="#KRERKCHAI"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="54sp" />
 
         </LinearLayout>
 
