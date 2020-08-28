@@ -59,12 +59,13 @@
             <Button
                 android:id="@+id/buttonInsert"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="37dp"
                 android:background="#FF9800"
                 android:onClick="@{()->contactViewModel.onContactAdd()}"
                 android:shadowColor="#FFFFFF"
-                android:text="Button"
-                android:textColor="#FFFFFF" />
+                android:text="ลงชื่อ"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp" />
 
 
             <TextView
