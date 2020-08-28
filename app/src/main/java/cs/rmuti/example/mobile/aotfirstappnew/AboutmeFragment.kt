@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import androidx.databinding.DataBindingUtil
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
+import cs.rmuti.example.mobile.aotfirstappnew.R.menu.options_menu
 import cs.rmuti.example.mobile.aotfirstappnew.databinding.FragmentAboutmeBinding
 
 // TODO: Rename parameter arguments, choose names that match
@@ -37,7 +38,7 @@ class AboutmeFragment : Fragment() {
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
-        inflater?.inflate(R.menu.options_menu, menu)
+        inflater?.inflate(options_menu, menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {

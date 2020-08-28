@@ -6,7 +6,7 @@
 
         <variable
             name="contactViewModel"
-            type="cs.rmuti.example.mobile.aotfirstappnew" />
+            type="cs.rmuti.example.mobile.aotfirstappnew.ContactViewModel" />
     </data>
 
     <FrameLayout
@@ -20,12 +20,24 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name" />
+
             <EditText
                 android:id="@+id/editTextTextPersonName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:inputType="text" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sername" />
 
             <EditText
                 android:id="@+id/editTextTextPersonPhone"
@@ -34,17 +46,24 @@
                 android:ems="10"
                 android:inputType="text" />
 
+
+
             <Button
                 android:id="@+id/buttonInsert"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:background="#FF9800"
                 android:onClick="@{()->contactViewModel.onContactAdd()}"
-                android:text="Button" />
+                android:shadowColor="#FFFFFF"
+                android:text="Button"
+                android:textColor="#FFFFFF" />
+
 
             <TextView
                 android:id="@+id/textview"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/as"
                 android:text="@{contactViewModel.contactString}" />
 
         </LinearLayout>

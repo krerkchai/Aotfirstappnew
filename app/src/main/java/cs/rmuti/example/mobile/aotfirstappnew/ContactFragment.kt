@@ -1,6 +1,5 @@
 package cs.rmuti.example.mobile.aotfirstappnew
 
-import android.app.Application
 import android.os.Bundle
 import android.view.*
 import androidx.fragment.app.Fragment
@@ -9,7 +8,6 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import androidx.navigation.ui.NavigationUI
 import cs.rmuti.example.mobile.aotfirstappnew.database.Database
-import cs.rmuti.example.mobile.aotfirstappnew.database.DatabaseDAO
 import cs.rmuti.example.mobile.aotfirstappnew.databinding.FragmentContactBinding
 
 
@@ -28,10 +26,10 @@ class ContactFragment : Fragment() {
         )
         setHasOptionsMenu(true)
 
-        val application:Application = requireNotNull(this.activity).application
-        val dataSource:DatabaseDAO = Database.getInstance(application).databaseDao
+        val application = requireNotNull(this.activity).application
+        val dataSource = Database.getInstance(application).databaseDao
         val viewModelFactory = ContactViewModelFactory(dataSource, binding, application)
-        val contactViewModel:ContactViewModel =
+        val contactViewModel =
             ViewModelProvider(
                 this, viewModelFactory
             ).get(ContactViewModel::class.java)
@@ -52,3 +50,6 @@ class ContactFragment : Fragment() {
         ) || super.onOptionsItemSelected(item)
     }
 }
+
+
+
