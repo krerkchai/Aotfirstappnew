@@ -21,6 +21,15 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="47dp"
+                android:background="#FFC107"
+                android:gravity="center_vertical|center_horizontal"
+                android:text="ลงชื่อเยี่ยมชมแอพพลิเคชั่น"
+                android:textSize="24sp" />
+
+            <TextView
                 android:id="@+id/textView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -61,7 +70,7 @@
             <TextView
                 android:id="@+id/textview"
                 android:layout_width="match_parent"
-                android:layout_height="454dp"
+                android:layout_height="438dp"
                 android:background="@drawable/as"
                 android:text="@{contactViewModel.contactString}" />
 
